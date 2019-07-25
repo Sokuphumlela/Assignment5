@@ -17,7 +17,7 @@ public class BarberRepositoryImpl implements BarberRepository {
 
     private Barber findBarber(String barberId) {
 
-        return this.barber.stream()
+        return this.barbers.stream()
                 .filter(course -> course.getBarberId().trim().equals(barberId))
                 .findAny()
                 .orElse(null);

@@ -16,7 +16,7 @@ public class BarberFactoryTest {
     }
 
     @Test
-    public void buildCourse() {
+    public void buildBarber() {
         Barber barber = BarberFactory.buildBarber(this.testName);
         Assert.assertNotNull(barber.getBarberId());
         Assert.assertNotNull(barber);
